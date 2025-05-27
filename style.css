@@ -11,7 +11,7 @@ body::before {
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://memeprod.ap-south-1.linodeobjects.com/user-template/85b02858fe87dbae45fc3916a3151d5e.png');
+    background-image: url('background_image.png');
     background-size: cover;
     background-position: center;
     filter: blur(5px);
