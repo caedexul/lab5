@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Sofiia Hamarovska</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">switch to the dark side 🐱‍👤</button>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile">
+                <img class="profile-photo" src="C:/Users/sonja/Downloads/IMG_0894.JPG" alt="Your photo">
+                <h1 class="name">Sofiia Hamarovska</h1>
+                <p><strong>Major:</strong> Cybersecurity</p>
+            </div>
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p><strong>Email:</strong> cupcake@gmail.com</p>
+                <p><strong>Phone:</strong> +380 55 555 5555</p>
+                <p><strong>City:</strong> Lviv, Ukraine</p>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <section>
+                <h2>Education</h2>
+                <p>Lviv Polytechnic National University</p>
+                <p>Cybersecurity — 2025 to Present</p>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>Basic HTML</li>
+                    <li>Basic CSS</li>
+                    <li>Teamwork</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <p>No professional experience yet. Actively learning and participating in student projects.</p>
+            </section>
+
+            <footer class="footer">
+                &copy; 2025 Sofiia Hamarovska
+            </footer>
+            <!--апдейт до 4 лаби// відобразимо всю наявну інфу у localStorage-->
+            <div id="localStorageFooter"></div>
+            <div id="commentsContainer">
+                <h2>Feedback</h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- модальне вікно -->
+    <div id="feedbackModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>feedback</h2>
+            <form action="https://formspree.io/f/xyzwrykl" method="POST">
+                <label for="name">NAME:</label>
+                <input type="text" id="name" name="name" placeholder="put your name" required>
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" placeholder="your-email@gmail.com" required>
+                <label for="phone">PHONE NUMBER:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380 55 55 55 555" required>
+                <label for="message">MESSAGE:</label>
+                <textarea id="message" name="message" rows="5" placeholder="write your message here" required></textarea>
+                <button type="submit">send</button>
+            </form>
+            <button id="closeModal">close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
