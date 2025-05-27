@@ -30,7 +30,7 @@ body::before {
 }
 
 .left-column {
-    background-color: #a19abb;
+    background-color: #a19abbb2;
     padding: 30px;
     width: 300px;
     border-right: 1px solid #ccc;
